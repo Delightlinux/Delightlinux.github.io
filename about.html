@@ -1,17 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Delight Linux</title>
     <style>
-        body { background: #050505; color: white; font-family: sans-serif; text-align: center; padding: 50px; }
-        .back-link { color: #ff0000; text-decoration: none; font-weight: bold; }
-        .back-link:hover { text-decoration: underline; }
+        :root {
+            --bg-dark: #0a0a0a;
+            --accent-blue: #007bff;
+            --card-bg: #161616;
+            --text-main: #e0e0e0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Synced Top Bar */
+        .navbar {
+            background: #000000;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem; 
+            font-weight: 800; 
+            color: var(--accent-blue);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a {
+            color: #999;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { color: white; }
+
+        /* About Content */
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 80px 20px;
+            text-align: left;
+        }
+
+        h1 { color: white; font-size: 2.5rem; border-left: 5px solid var(--accent-blue); padding-left: 20px; }
+        
+        .mission-box {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border: 1px solid #222;
+        }
+
+        .highlight { color: var(--accent-blue); font-weight: bold; }
     </style>
 </head>
 <body>
-    <h1 style="color: #ff0000;">ABOUT DELIGHT LINUX</h1>
-    <p>Delight Linux is a custom OS built from scratch on a Fire Tablet 8 12gen.</p>
-    <p>Our mission: Determination, Performance, and Freedom.</p>
-    <br>
-    <a href="index.html" class="back-link">← BACK TO HOME</a>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">DELIGHT_OS</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Wiki</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>THE STORY</h1>
+        <p>Delight Linux is a custom OS built from scratch on a <span class="highlight">Fire Tablet 8 (12th Gen)</span>. While most people use tablets for watching videos, we used ours to compile a new future.</p>
+        
+        <div class="mission-box">
+            <h3>Our Mission</h3>
+            <p><b>Determination:</b> Never giving up, even when the compiler throws 1,000 errors.</p>
+            <p><b>Performance:</b> Squeezing every bit of power out of the hardware.</p>
+            <p><b>Freedom:</b> A system that belongs to the user, not a corporation.</p>
+        </div>
+
+        <p style="margin-top: 40px; color: #666;">
+            Created by the Underground. Powered by Linux From Scratch 12.4.
+        </p>
+    </div>
+
 </body>
 </html>
