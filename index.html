@@ -3,86 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delight Linux | Proud and free </title>
+    <title>Delight Linux | Desktop OS</title>
     <style>
-        /* Ubuntu Palette */
+        /* Pro PC Palette */
         :root {
-            --ubuntu-purple: #772953;
-            --ubuntu-orange: #E95420;
-            --ubuntu-dark: #300a24; /* That classic terminal purple-black */
-            --ubuntu-grey: #aea79f;
+            --bg-dark: #0a0a0a;
+            --accent-blue: #007bff;
+            --card-bg: #161616;
+            --text-main: #e0e0e0;
         }
 
         body {
-            background-color: var(--ubuntu-dark);
-            color: #ffffff;
-            font-family: 'Ubuntu', 'Segoe UI', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Inter', 'Segoe UI', sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        /* Ubuntu Top Bar */
+        /* Sleek Desktop Navbar */
         .navbar {
-            background: #2c001e;
-            padding: 0.5rem 2rem;
+            background: #000000;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 3px solid var(--ubuntu-orange);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            border-bottom: 1px solid #333;
         }
 
         .nav-logo {
-            font-size: 1.4rem; 
-            font-weight: 300; 
-            color: white;
+            font-size: 1.5rem; 
+            font-weight: 800; 
+            color: var(--accent-blue);
             text-decoration: none;
+            letter-spacing: 1px;
         }
-
-        .nav-logo span { font-weight: bold; color: var(--ubuntu-orange); }
 
         .nav-links a {
-            color: white;
+            color: #999;
             text-decoration: none;
-            margin-left: 20px;
-            font-size: 0.9rem;
-            padding: 5px 10px;
-            border-radius: 4px;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
         }
 
-        .nav-links a:hover { background: var(--ubuntu-orange); }
+        .nav-links a:hover { color: white; }
 
-        /* Hero Section - The Ubuntu Gradient */
+        /* Hero Section - The PC Master Race Vibe */
         .hero {
-            padding: 120px 20px;
+            padding: 140px 20px;
             text-align: center;
-            background: linear-gradient(135deg, var(--ubuntu-purple) 0%, var(--ubuntu-dark) 100%);
+            background: radial-gradient(circle at center, #111 0%, #000 100%);
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             margin: 0;
-            font-weight: 200;
+            color: white;
         }
 
-        .hero h1 b { font-weight: 700; color: var(--ubuntu-orange); }
+        .hero p {
+            color: #888;
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 20px auto;
+        }
 
-        /* Ubuntu Style Buttons */
+        /* Desktop Style Button */
         .btn {
             display: inline-block;
-            background: var(--ubuntu-orange);
+            background: var(--accent-blue);
             color: white;
-            padding: 10px 25px;
+            padding: 12px 35px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 6px;
+            border-radius: 3px; /* Sharper corners for a pro look */
             margin-top: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
 
-        .btn:hover { background: #c74416; }
+        .btn:hover { background: #0056b3; }
 
-        /* Features Section */
+        /* Performance Specs Section */
         .container {
             max-width: 1100px;
             margin: auto;
@@ -91,29 +92,26 @@
 
         .grid {
             display: flex;
-            gap: 30px;
+            gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .card {
-            background: #ffffff;
-            color: #333;
+            background: var(--card-bg);
             padding: 30px;
-            border-radius: 4px; /* Ubuntu cards are less rounded, more clean */
-            width: 280px;
-            border-top: 5px solid var(--ubuntu-orange);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-radius: 8px;
+            width: 300px;
+            border: 1px solid #222;
         }
 
-        .card h3 { color: var(--ubuntu-purple); margin-top: 0; }
-
+        .card h3 { color: var(--accent-blue); margin-top: 0; }
     </style>
 </head>
 <body>
 
     <nav class="navbar">
-        <a href="index.html" class="nav-logo">delight<span>linux</span></a>
+        <a href="index.html" class="nav-logo">DELIGHT_OS</a>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -122,24 +120,24 @@
     </nav>
 
     <header class="hero">
-        <h1>Welcome to <b>Delight Linux</b></h1>
-        <p style="font-size: 1.2rem; opacity: 0.9;">Linux for the human beings (and the determined).</p>
-        <a href="#" class="btn">Get Delight 26.04</a>
+        <h1>DELIGHT LINUX</h1>
+        <p>A high-performance x86_64 distribution built from the ground up for modern PC hardware.</p>
+        <a href="#" class="btn">DOWNLOAD ALPHA .ISO</a>
     </header>
 
     <div class="container">
         <div class="grid">
             <div class="card">
-                <h3>Open Source</h3>
-                <p>Everything we do is shared. Built from the LFS 12.4 foundation for ultimate transparency.</p>
+                <h3>Workstation Ready</h3>
+                <p>Designed for heavy tasks, compiling, and gaming. No mobile limitations. Full PC power.</p>
             </div>
             <div class="card">
-                <h3>Beauty Powered</h3>
-                <p>Specifically tuned to run on low and high end hardware.</p>
+                <h3>LFS Core</h3>
+                <p>Based on Linux From Scratch 12.4. You control every binary on your system.</p>
             </div>
             <div class="card">
-                <h3>Modern Look</h3>
-                <p>Taking the terminal look but with multiple desktops to choose from.</p>
+                <h3>Minimalist</h3>
+                <p>Zero bloatware. We provide the base; you decide what your desktop looks like.</p>
             </div>
         </div>
     </div>
