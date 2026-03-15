@@ -3,116 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delight Linux | Official</title>
+    <title>Delight Linux | Proudly Ubuntu-ish</title>
     <style>
-        /* The "Underground" Aesthetic */
-        body {
-            background-color: #050505;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
+        /* Ubuntu Palette */
+        :root {
+            --ubuntu-purple: #772953;
+            --ubuntu-orange: #E95420;
+            --ubuntu-dark: #300a24; /* That classic terminal purple-black */
+            --ubuntu-grey: #aea79f;
         }
 
-        /* Top Bar */
+        body {
+            background-color: var(--ubuntu-dark);
+            color: #ffffff;
+            font-family: 'Ubuntu', 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Ubuntu Top Bar */
         .navbar {
-            background: rgba(20, 20, 20, 0.95);
-            padding: 1rem 2rem;
+            background: #2c001e;
+            padding: 0.5rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid #ff0000; /* Determination Red */
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            border-bottom: 3px solid var(--ubuntu-orange);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
 
         .nav-logo {
-            font-size: 1.5rem; 
-            font-weight: bold; 
-            color: #ff0000;
+            font-size: 1.4rem; 
+            font-weight: 300; 
+            color: white;
             text-decoration: none;
         }
+
+        .nav-logo span { font-weight: bold; color: var(--ubuntu-orange); }
 
         .nav-links a {
             color: white;
             text-decoration: none;
             margin-left: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
             font-size: 0.9rem;
-            transition: 0.3s;
+            padding: 5px 10px;
+            border-radius: 4px;
         }
 
-        .nav-links a:hover { color: #ffff00; } /* Justice Yellow */
+        .nav-links a:hover { background: var(--ubuntu-orange); }
 
-        /* Hero Section */
+        /* Hero Section - The Ubuntu Gradient */
         .hero {
-            padding: 100px 20px;
+            padding: 120px 20px;
             text-align: center;
-            background: linear-gradient(to bottom, #111, #050505);
+            background: linear-gradient(135deg, var(--ubuntu-purple) 0%, var(--ubuntu-dark) 100%);
         }
 
         .hero h1 {
-            font-size: 4rem;
+            font-size: 3.5rem;
             margin: 0;
-            letter-spacing: 5px;
-            color: #ff0000;
-            text-shadow: 0 0 15px rgba(255,0,0,0.5);
+            font-weight: 200;
         }
+
+        .hero h1 b { font-weight: 700; color: var(--ubuntu-orange); }
+
+        /* Ubuntu Style Buttons */
+        .btn {
+            display: inline-block;
+            background: var(--ubuntu-orange);
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            margin-top: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover { background: #c74416; }
 
         /* Features Section */
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: auto;
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
 
         .grid {
             display: flex;
-            gap: 20px;
-            justify-content: space-around;
+            gap: 30px;
+            justify-content: center;
             flex-wrap: wrap;
         }
 
         .card {
-            background: #111;
-            padding: 25px;
-            border-radius: 8px;
-            border: 1px solid #333;
-            width: 250px;
-            transition: 0.3s;
+            background: #ffffff;
+            color: #333;
+            padding: 30px;
+            border-radius: 4px; /* Ubuntu cards are less rounded, more clean */
+            width: 280px;
+            border-top: 5px solid var(--ubuntu-orange);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
-        .card:hover {
-            border-color: #ff0000;
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
-        }
+        .card h3 { color: var(--ubuntu-purple); margin-top: 0; }
 
-        .btn {
-            display: inline-block;
-            background: #ff0000;
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #cc0000;
-            transform: scale(1.05);
-        }
     </style>
 </head>
 <body>
 
     <nav class="navbar">
-        <a href="index.html" class="nav-logo">DELIGHT LINUX</a>
+        <a href="index.html" class="nav-logo">delight<span>linux</span></a>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -121,24 +122,24 @@
     </nav>
 
     <header class="hero">
-        <h1>DELIGHT LINUX</h1>
-        <p style="font-size: 1.2rem; color: #aaa;">Built on Determination. Powered by LFS 12.4.</p>
-        <a href="#" class="btn">DOWNLOAD ALPHA</a>
+        <h1>Welcome to <b>Delight Linux</b></h1>
+        <p style="font-size: 1.2rem; opacity: 0.9;">Linux for the human beings (and the determined).</p>
+        <a href="#" class="btn">Get Delight 26.04</a>
     </header>
 
     <div class="container">
         <div class="grid">
             <div class="card">
-                <h3>Pure Scratch</h3>
-                <p>No bloat. No useless apps. Just a hand-crafted Linux kernel built on a Fire Tablet.</p>
+                <h3>Open Source</h3>
+                <p>Everything we do is shared. Built from the LFS 12.4 foundation for ultimate transparency.</p>
             </div>
             <div class="card">
-                <h3>Determined</h3>
-                <p>Optimized for low-end hardware, making sure every byte counts toward performance.</p>
+                <h3>Fire Powered</h3>
+                <p>Specifically tuned to run fast on Fire Tablet hardware while maintaining a pro feel.</p>
             </div>
             <div class="card">
-                <h3>Open Soul</h3>
-                <p>100% open source. Check the code, build your own world, and stay determined.</p>
+                <h3>Modern Look</h3>
+                <p>Taking the best of the GNOME/Ubuntu aesthetic and making it lightweight.</p>
             </div>
         </div>
     </div>
