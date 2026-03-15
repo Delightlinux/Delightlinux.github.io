@@ -28,6 +28,13 @@
             z-index: 100;
         }
 
+        .nav-logo {
+            font-size: 1.5rem; 
+            font-weight: bold; 
+            color: #ff0000;
+            text-decoration: none;
+        }
+
         .nav-links a {
             color: white;
             text-decoration: none;
@@ -35,6 +42,7 @@
             font-weight: bold;
             text-transform: uppercase;
             font-size: 0.9rem;
+            transition: 0.3s;
         }
 
         .nav-links a:hover { color: #ffff00; } /* Justice Yellow */
@@ -80,6 +88,7 @@
         .card:hover {
             border-color: #ff0000;
             transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
         }
 
         .btn {
@@ -91,18 +100,23 @@
             font-weight: bold;
             border-radius: 5px;
             margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #cc0000;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
 
     <nav class="navbar">
-        <div style="font-size: 1.5rem; font-weight: bold; color: #ff0000;">DELIGHT LINUX</div>
+        <a href="index.html" class="nav-logo">DELIGHT LINUX</a>
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
             <a href="#">Wiki</a>
-            <a href="https://www.linuxfromscratch.org/" target="_blank">LFS Stats</a>
         </div>
     </nav>
 
