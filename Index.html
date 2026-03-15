@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delight Linux | Official</title>
+    <style>
+        /* The "Underground" Aesthetic */
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Top Bar */
+        .navbar {
+            background: rgba(20, 20, 20, 0.95);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ff0000; /* Determination Red */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a:hover { color: #ffff00; } /* Justice Yellow */
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #111, #050505);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            letter-spacing: 5px;
+            color: #ff0000;
+            text-shadow: 0 0 15px rgba(255,0,0,0.5);
+        }
+
+        /* Features Section */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .grid {
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #111;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            width: 250px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #ff0000;
+            transform: translateY(-10px);
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff0000;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div style="font-size: 1.5rem; font-weight: bold; color: #ff0000;">DELIGHT LINUX</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Wiki</a>
+            <a href="https://www.linuxfromscratch.org/" target="_blank">LFS Stats</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>DELIGHT LINUX</h1>
+        <p style="font-size: 1.2rem; color: #aaa;">Built on Determination. Powered by LFS 12.4.</p>
+        <a href="#" class="btn">DOWNLOAD ALPHA</a>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h3>Pure Scratch</h3>
+                <p>No bloat. No useless apps. Just a hand-crafted Linux kernel built on a Fire Tablet.</p>
+            </div>
+            <div class="card">
+                <h3>Determined</h3>
+                <p>Optimized for low-end hardware, making sure every byte counts toward performance.</p>
+            </div>
+            <div class="card">
+                <h3>Open Soul</h3>
+                <p>100% open source. Check the code, build your own world, and stay determined.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
